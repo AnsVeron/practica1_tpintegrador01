@@ -2,12 +2,76 @@ $primary-color: #8b1e1e;
 $secondary-color: #FFEBDD;
 $dark-color: #2c2c2c;
 
+$dark-bg: #232323;
+$dark-primary: #b33c3c;
+$dark-secondary: #2c2c2c;
+$dark-text: #f5f5f5;
+
 // General
 body {
   font-family: "Nunito Sans", sans-serif;
   font-optical-sizing: auto;
   background-color: $secondary-color; 
   
+}
+
+body.dark-mode {
+  background-color: $dark-secondary;
+  color: $dark-text;
+
+  .bg-light {
+    background-color: $dark-bg !important;
+  }
+
+  .navbar {
+    background-color: $dark-bg !important;
+
+    .nav-link {
+      color: $dark-text !important;
+      &:hover {
+        color: $dark-primary !important;
+      }
+    }
+
+    .btn-danger {
+      background-color: $dark-primary;
+      color: $dark-text;
+    }
+  }
+
+  .header {
+    text-shadow: 1px 1px 8px rgba(0,0,0,.8);
+  }
+
+  section {
+    background-color: $dark-bg !important;
+    color: $dark-text;
+  }
+
+  .menu-section {
+    background-color: $dark-primary;
+    color: $dark-text;
+    h5 {
+      background-color: lighten($dark-primary, 5%);
+      color: $dark-text;
+    }
+    ol li ul li {
+      color: $dark-text;
+    }
+  }
+
+  footer {
+    background-color: $dark-primary;
+    color: $dark-text;
+    .btn-danger {
+      background-color: darken($dark-primary, 10%);
+      color: $dark-text;
+    }
+  }
+
+  .info-img {
+    box-shadow: 0px 4px 16px rgba(0,0,0,0.4);
+  }
 }
 
 .bg-light {

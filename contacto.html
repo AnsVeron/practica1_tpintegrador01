@@ -56,6 +56,10 @@
       <a href="#" target="_blank" style="color: black; font-size: 20px;">
         <i class="fa-brands fa-instagram"></i>
       </a>
+      <!-- Dark mode toggle button -->
+      <button id="darkModeToggle" type="button" class="btn btn-outline-dark btn-sm" title="Modo oscuro">
+        <i class="fa-solid fa-moon"></i>
+      </button>
     </div>
 
   </div>
@@ -158,5 +162,18 @@
   </footer>
     <!-- enlace js de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        if (localStorage.getItem('darkMode') === 'true') {
+          body.classList.add('dark-mode');
+        }
+        darkModeToggle.addEventListener('click', function(e) {
+          body.classList.toggle('dark-mode');
+          localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+        });
+      });
+    </script>
 </body>
 </html>
