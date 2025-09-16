@@ -1,0 +1,106 @@
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #FFEBDD;
+}
+
+.bg-light {
+  background-color: #FFEBDD !important;
+}
+
+.header {
+  background: url("../img/ivan-torres-MQUqbmszGGM-unsplash.jpg") center/cover no-repeat;
+  min-height: 60vh;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.navbar {
+  background-color: white !important;
+}
+.navbar .navbar-brand img {
+  border-radius: 50%;
+}
+.navbar .nav-link {
+  color: #2c2c2c !important;
+  font-weight: 500;
+}
+.navbar .nav-link.active {
+  font-weight: 700;
+}
+.navbar .nav-link:hover {
+  color: #8b1e1e !important;
+}
+.navbar .btn-danger {
+  background-color: #8b1e1e;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  padding: 6px 16px;
+}
+
+footer {
+  background-color: #8b1e1e;
+}
+footer .btn-danger {
+  background-color: rgb(97.0532544379, 20.9467455621, 20.9467455621);
+  border: none;
+}
+
+.info-img {
+  width: 250px;
+  height: 200px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1/1;
+  display: inline-block;
+}
+
+section p {
+  font-size: 1rem;
+  color: #2c2c2c;
+  line-height: 1.6;
+}
+
+section h5 {
+  color: white;
+  background-color: #8b1e1e;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.menu-section {
+  background-color: #8b1e1e;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+.menu-section h5 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  background-color: rgb(159.9733727811, 34.5266272189, 34.5266272189);
+  padding: 6px 14px;
+  border-radius: 8px;
+  display: inline-block;
+}
+.menu-section ol {
+  padding-left: 1.2rem;
+}
+.menu-section ol li {
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+.menu-section ol li ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 0.3rem;
+}
+.menu-section ol li ul li {
+  font-weight: 400;
+  font-size: 0.95rem;
+}/*# sourceMappingURL=style.css.map */

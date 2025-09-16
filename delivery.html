@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trabajo Practico | Home</title>
+
+    <!-- enlace al css de bootstrap -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- enlace personalizado de css -->
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+      section {
+        background-color: #FFEBDD !important;
+      }
+    </style>
+    <script src="https://kit.fontawesome.com/da6de3a464.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Comfortaa:wght@300..700&family=Fredoka:wght@300..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-light shadow-sm">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="./assets/logo/logo.png" alt="Paradise Pizza" style="width:60px; height:60px; object-fit:contain;">
+    </a>
+
+    <!-- Botón hamburguesa (móvil) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item"><a class="nav-link fw-bold active" href="/index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="/conocenos.html">Conócenos</a></li>
+        <li class="nav-item"><a class="nav-link" href="/menu.html">Menú</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Delivery + Instagram -->
+    <div class="d-flex align-items-center gap-3">
+      <a class="btn btn-danger btn-sm px-3" href="/delivery.html">Delivery</a>
+      <a href="#" target="_blank" style="color: black; font-size: 20px;">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+  <!-- HEADER -->
+  <header class="text-center text-white d-flex align-items-center justify-content-center header">
+    <div class="container">
+      <h1 class="fw-bold">Delivery</h1>
+    </div>
+  </header>
+
+    <!-- TEXTO INTRO + FORMULARIO DE CONTACTO -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Hace tu pedido</h2>
+      <form class="p-4 bg-white rounded shadow-sm">
+        
+        <!-- Nombre y Apellido -->
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre y Apellido *</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre y apellido" required>
+        </div>
+
+        <!-- Teléfono -->
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Teléfono *</label>
+          <input type="tel" class="form-control" id="telefono" placeholder="Ej: 1123456789" required>
+        </div>
+
+        <!-- Dirección -->
+        <div class="mb-3">
+          <label for="direccion" class="form-label">Dirección de Entrega *</label>
+          <input type="text" class="form-control" id="direccion" placeholder="Calle, número, ciudad" required>
+        </div>
+
+        <!-- Mensaje -->
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje para el Delivery</label>
+          <textarea class="form-control" id="mensaje" rows="3" placeholder="Ej: Tocar timbre, sin cebolla, etc."></textarea>
+        </div>
+
+        <!-- Botones -->
+        <div class="d-flex justify-content-between">
+          <button type="submit" class="btn btn-danger">Enviar</button>
+          <button type="reset" class="btn btn-secondary">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="text-white py-5">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-4 mb-3">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/logo/logo2.png" alt="Paradise Pizza" style="width:80px; height:80px; object-fit:contain; border-radius: 100%;">
+          </a>
+          <h5 class="fw-bold">Horarios</h5>
+          <p>Lunes a Viernes de 11:00hs a 22:00hs <br>
+             Sábado y Domingo de 12:00hs a 23:00hs</p>
+          <a href="#" class="btn btn-danger btn-sm">Ubicacion</a>
+
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <h5 class="fw-bold">Contacto</h5>
+          <p>Tel: (123) 456 - 7890 <br>
+             Email: info@pizzaparadise.com</p>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <h5 class="fw-bold">¡Ubícanos!</h5>
+          <p>Calle Falsa 123, Ciudad imaginaria</p>
+          <a href="#" class="btn btn-danger btn-sm">Hace tu pedido</a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+    <!-- enlace js de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
